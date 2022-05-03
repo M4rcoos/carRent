@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\usu\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add csv-parcer
+  C:\Program Files\nodejs\node.exe C:\Users\usu\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add swagge
 
 PATH: 
   C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\GitExtensions\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\dotnet\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\usu\AppData\Local\Microsoft\WindowsApps;C:\Users\usu\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\usu\AppData\Local\Programs\mongosh\;C:\Program Files\Azure Data Studio\bin;C:\Users\usu\.dotnet\tools;C:\Users\usu\AppData\Local\GitHubDesktop\bin;C:\Users\usu\AppData\Roaming\npm
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/csv-parcer: Not found
+  Error: https://registry.yarnpkg.com/swagge: Not found
       at Request.params.callback [as _callback] (C:\Users\usu\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:67029:18)
       at Request.self.callback (C:\Users\usu\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140883:22)
       at Request.emit (node:events:526:28)
@@ -29,8 +29,10 @@ Trace:
 npm manifest: 
   {
     "dependencies": {
+      "@types/csv-parse": "^1.2.2",
       "@types/multer": "^1.4.7",
       "@types/uuid": "^8.3.4",
+      "csv-parse": "^5.0.4",
       "express": "^4.17.3",
       "multer": "^1.4.4",
       "uuid": "^8.3.2"
@@ -126,6 +128,13 @@ Lockfile:
     integrity sha512-cdeYyv4KWoEgpBISTxWvqYsVy444DOqehiF3fM3ne10AmJ62RSyNkUnxMJXHQWRQQX2eR94m5y1IZyDwBjV9FQ==
     dependencies:
       "@types/node" "*"
+  
+  "@types/csv-parse@^1.2.2":
+    version "1.2.2"
+    resolved "https://registry.yarnpkg.com/@types/csv-parse/-/csv-parse-1.2.2.tgz#713486235759d615dc8e6a6a979170ada76701d5"
+    integrity sha512-k33tLtRKTQxf7hQfMlkWoS2TQYsnpk1ibZN+rzbuCkeBs8m23nHTeDTF1wb/e7/MSLdtgCzqu3oM1I101kd6yw==
+    dependencies:
+      csv-parse "*"
   
   "@types/express-serve-static-core@^4.17.18":
     version "4.17.28"
@@ -547,6 +556,11 @@ Lockfile:
       path-key "^3.1.0"
       shebang-command "^2.0.0"
       which "^2.0.1"
+  
+  csv-parse@*, csv-parse@^5.0.4:
+    version "5.0.4"
+    resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-5.0.4.tgz#97e5e654413bcf95f2714ce09bcb2be6de0eb8e3"
+    integrity sha512-5AIdl8l6n3iYQYxan5djB5eKDa+vBnhfWZtRpJTcrETWfVLYN0WSj3L9RwvgYt+psoO77juUr8TG8qpfGZifVQ==
   
   debug@2.6.9, debug@^2.6.9:
     version "2.6.9"
